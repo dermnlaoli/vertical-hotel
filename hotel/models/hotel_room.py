@@ -18,7 +18,10 @@ class HotelRoom(models.Model):
 
     _name = "hotel.room"
     _description = "Hotel Room"
+<<<<<<< HEAD
     _inherits = {'product.product': 'product_id'}
+=======
+>>>>>>> cfbfee1d279ef6f7984fe226fdfc1d744208c2c5
 
     product_id = fields.Many2one(
         "product.product",
@@ -120,7 +123,10 @@ class HotelRoomType(models.Model):
 
     _name = "hotel.room.type"
     _description = "Room Type"
+<<<<<<< HEAD
     _inherits = {'product.category': 'product_categ_id'}
+=======
+>>>>>>> cfbfee1d279ef6f7984fe226fdfc1d744208c2c5
 
     categ_id = fields.Many2one("hotel.room.type", "Category")
     child_ids = fields.One2many(
@@ -211,7 +217,10 @@ class HotelRoomAmenitiesType(models.Model):
 
     _name = "hotel.room.amenities.type"
     _description = "amenities Type"
+<<<<<<< HEAD
     _inherits = {'product.category': 'product_categ_id'}
+=======
+>>>>>>> cfbfee1d279ef6f7984fe226fdfc1d744208c2c5
 
     amenity_id = fields.Many2one("hotel.room.amenities.type", "Category")
     child_ids = fields.One2many(
@@ -302,7 +311,10 @@ class HotelRoomAmenities(models.Model):
 
     _name = "hotel.room.amenities"
     _description = "Room amenities"
+<<<<<<< HEAD
     _inherits = {'product.product': 'product_id'}
+=======
+>>>>>>> cfbfee1d279ef6f7984fe226fdfc1d744208c2c5
 
     product_id = fields.Many2one(
         "product.product",
